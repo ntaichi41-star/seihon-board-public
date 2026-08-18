@@ -2,13 +2,13 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-18T13:06:00+09:00",
+  "updated_at": "2026-08-18T14:00:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-18T12:02:00+09:00",
+  "compared_to": "2026-08-18T13:06:00+09:00",
   "deltas": [
     {
       "name": "朝の便",
-      "before": "3 / 4（news・quote・boardあり。diary なし）",
+      "before": "4 / 4（news・quote・board・diaryあり）",
       "after": "4 / 4（news・quote・board・diaryあり）",
       "note": "受信棚に今日のnews・quote・board・diaryとmac_heartbeatあり"
     },
@@ -20,13 +20,13 @@
     },
     {
       "name": "Mac心拍",
-      "before": "STATE生成は08:41。心拍ファイルは06:45。受信棚に今日のmac_heartbeatあり",
-      "after": "STATE.md生成は08:41。心拍ファイルは06:45。受信棚に今日のmac_heartbeatあり",
-      "note": "STATEは4時間超経過"
+      "before": "STATE.md生成は08:41。心拍ファイルは06:45。受信棚に今日のmac_heartbeatあり",
+      "after": "STATE.md生成は08:41。心拍ファイルあり。受信棚に今日のmac_heartbeatあり",
+      "note": "STATEは5時間超経過"
     },
     {
       "name": "整文の在庫",
-      "before": "残り143本",
+      "before": "残り143本（全271本中）",
       "after": "残り143本（全271本中）",
       "note": "変化なし"
     }
@@ -188,7 +188,7 @@
         "input": "機械の生存の印",
         "process": "印を書いて受信棚へ置く",
         "output": "今日の心拍の紙",
-        "current": "今日のmac_heartbeatあり。STATE生成は08:41。心拍ファイルは06:45",
+        "current": "今日のmac_heartbeatあり。STATE生成は08:41",
         "evidence": "受信棚の今日の紙とSTATE.mdの生成時刻"
       }
     },
