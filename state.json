@@ -2,15 +2,15 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-18T11:05:00+09:00",
+  "updated_at": "2026-08-18T12:02:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-18T11:02:00+09:00",
+  "compared_to": "2026-08-18T11:05:00+09:00",
   "deltas": [
     {
       "name": "Mac心拍",
-      "before": "見回り1分前。見張り12分前。いまの現在地は08:41に焼き直された",
-      "after": "STATE生成は08:41。心拍ファイルは06:45。受信棚に今日のmac_heartbeatあり",
-      "note": "STATEは20分超経過"
+      "before": "STATE生成は08:41。心拍ファイルは06:45。受信棚に今日のmac_heartbeatあり",
+      "after": "STATE.md生成は08:41。心拍ファイルは06:45。受信棚に今日のmac_heartbeatあり",
+      "note": "STATEは3時間超経過"
     },
     {
       "name": "朝の便",
