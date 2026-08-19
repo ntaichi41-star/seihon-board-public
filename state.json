@@ -2,9 +2,9 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-19T12:04:00+09:00",
+  "updated_at": "2026-08-19T13:01:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-19T11:00:00+09:00",
+  "compared_to": "2026-08-19T12:04:00+09:00",
   "deltas": [
     {
       "name": "朝の便",
@@ -20,9 +20,9 @@
     },
     {
       "name": "Mac心拍",
-      "before": "STATE.md生成は10:59。心拍ファイルあり。受信棚に今日のmac_heartbeatあり",
-      "after": "STATE.md生成は12:01。心拍ファイルあり。受信棚に今日のmac_heartbeatあり",
-      "note": "STATEは12:01生成。見回り12:01。見張り11:47"
+      "before": "STATE.md生成は12:01。心拍ファイルあり。受信棚に今日のmac_heartbeatあり",
+      "after": "STATE.md生成は12:57。心拍ファイルあり。受信棚に今日のmac_heartbeatあり",
+      "note": "STATEは12:57生成。見回り12:56。見張り12:47"
     },
     {
       "name": "整文の在庫",
@@ -38,8 +38,8 @@
     },
     {
       "name": "見回り・見張り",
-      "before": "STATEは10:59生成。見回り最終10:58。見張り10:47",
-      "after": "STATEは12:01生成。見回り最終12:01。見張り11:47",
+      "before": "STATEは12:01生成。見回り最終12:01。見張り11:47",
+      "after": "STATEは12:57生成。見回り最終12:56。見張り12:47",
       "note": "走行中の札はなし"
     }
   ],
@@ -200,7 +200,7 @@
         "input": "機械の生存の印",
         "process": "印を書いて受信棚へ置く",
         "output": "今日の心拍の紙",
-        "current": "今日のmac_heartbeatあり。STATE生成は12:01",
+        "current": "今日のmac_heartbeatあり。STATE生成は12:57",
         "evidence": "受信棚の今日の紙とSTATE.mdの生成時刻"
       }
     },
@@ -216,7 +216,7 @@
         "input": "手元の定期の仕事",
         "process": "回す → いまの現在地を書き直す",
         "output": "新しい現在地",
-        "current": "STATEは12:01生成。見回り最終12:01。見張り11:47。走行中の札はなし",
+        "current": "STATEは12:57生成。見回り最終12:56。見張り12:47。走行中の札はなし",
         "evidence": "いまの現在地の稼働の行"
       }
     },
