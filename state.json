@@ -2,13 +2,25 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-20T11:01:00+09:00",
+  "updated_at": "2026-08-20T12:00:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-20T10:00:00+09:00",
+  "compared_to": "2026-08-20T11:01:00+09:00",
   "deltas": [
     {
+      "name": "Mac心拍",
+      "before": "STATE.md生成は10:57。心拍ファイルあり（書込06:45）",
+      "after": "STATE.md生成は11:54。心拍ファイルあり",
+      "note": "STATEは11:54生成。見回り11:53。見張り11:48"
+    },
+    {
+      "name": "見回り・見張り",
+      "before": "STATEは10:57生成。見回り最終10:56。見張り10:48",
+      "after": "STATEは11:54生成。見回り最終11:53。見張り11:48",
+      "note": "走行中の札はなし"
+    },
+    {
       "name": "朝の便",
-      "before": "3 / 4（news・quote・boardあり。diaryなし）",
+      "before": "4 / 4（news・quote・board・diaryあり）",
       "after": "4 / 4（news・quote・board・diaryあり）",
       "note": "受信棚に今日のnews・quote・board・diary・mac_heartbeatあり"
     },
@@ -17,12 +29,6 @@
       "before": "8/20 の見出しが無い。最後の更新は 8/15 前後",
       "after": "8/20 の見出しが無い。最後の更新は 8/15 前後",
       "note": "材料のnews・quote・board・diaryは今日分あり。書く役はまだ書いていない"
-    },
-    {
-      "name": "Mac心拍",
-      "before": "STATE.md生成は09:53。心拍ファイルあり（書込06:45）",
-      "after": "STATE.md生成は10:57。心拍ファイルあり（書込06:45）",
-      "note": "STATEは10:57生成。見回り10:56。見張り10:48"
     },
     {
       "name": "整文の在庫",
@@ -35,12 +41,6 @@
       "before": "本人待ち1件。穴探し待ち2件。いちばん長い待ちは16日",
       "after": "本人待ち1件。穴探し待ち2件。いちばん長い待ちは16日",
       "note": "STATEの詰まり行"
-    },
-    {
-      "name": "見回り・見張り",
-      "before": "STATEは09:53生成。見回り最終09:53。見張り09:48",
-      "after": "STATEは10:57生成。見回り最終10:56。見張り10:48",
-      "note": "走行中の札はなし"
     }
   ],
   "systems": [
@@ -200,7 +200,7 @@
         "input": "機械の生存の印",
         "process": "印を書いて受信棚へ置く",
         "output": "今日の心拍の紙",
-        "current": "今日のmac_heartbeatあり。STATE生成は10:57",
+        "current": "今日のmac_heartbeatあり。STATE生成は11:54",
         "evidence": "受信棚の今日の紙とSTATE.mdの生成時刻"
       }
     },
@@ -216,7 +216,7 @@
         "input": "手元の定期の仕事",
         "process": "回す → いまの現在地を書き直す",
         "output": "新しい現在地",
-        "current": "STATEは10:57生成。見回り最終10:56。見張り10:48。走行中の札はなし",
+        "current": "STATEは11:54生成。見回り最終11:53。見張り11:48。走行中の札はなし",
         "evidence": "いまの現在地の稼働の行"
       }
     },
