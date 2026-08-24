@@ -2,33 +2,33 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-24T22:01:00+09:00",
+  "updated_at": "2026-08-25T06:02:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-24T21:06:00+09:00",
+  "compared_to": "2026-08-24T22:01:00+09:00",
   "deltas": [
     {
       "name": "見回り・見張り",
-      "before": "STATEは21:02生成。見回り最終21:02。見張り20:48",
-      "after": "STATEは22:00生成。見回り最終22:00。見張り21:48",
-      "note": "走行中の札はマスクの在庫（古い順に1本）"
+      "before": "STATEは22:00生成。見回り最終22:00。見張り21:48",
+      "after": "STATEは05:58生成。見回り最終05:58。見張り05:56",
+      "note": "走行中の札はなし"
     },
     {
       "name": "Mac心拍",
-      "before": "STATE.md生成は21:02。今日の心拍ファイルあり",
-      "after": "STATE.md生成は22:00。今日の心拍ファイルあり",
-      "note": "mac_heartbeat_2026-08-24 あり。見回り22:00。見張り21:48"
+      "before": "STATE.md生成は22:00。今日の心拍ファイルあり",
+      "after": "STATE.md生成は05:58。今日の心拍ファイルなし",
+      "note": "mac_heartbeat_2026-08-25 なし。見回り05:58。見張り05:56"
     },
     {
       "name": "朝の便",
       "before": "3 / 4（news・quote・boardあり diaryなし）",
-      "after": "3 / 4（news・quote・boardあり diaryなし）",
+      "after": "0 / 4（news・quote・board・diaryいずれもなし）",
       "note": "受信棚の今日の紙の有無"
     },
     {
       "name": "けさの1枚",
       "before": "8/24 の見出しが無い。最後の更新は 8/15 前後",
-      "after": "8/24 の見出しが無い。最後の更新は 8/15 前後",
-      "note": "材料のnews・quote・boardは今日分あり。diaryなし。書く役はまだ書いていない"
+      "after": "8/25 の見出しが無い。最後の更新は 8/15 前後",
+      "note": "材料のnews・quote・board・diaryは今日分なし。書く役はまだ書いていない"
     },
     {
       "name": "整文の在庫",
@@ -53,8 +53,8 @@
     {
       "id": "morning-pack",
       "name": "朝の便",
-      "status": "near_complete",
-      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
+      "status": "error",
+      "progress": { "kind": "count", "done": 0, "total": 4, "percent": 0 },
       "detail": {
         "owner": "スクリプト",
         "phase": "工事途中",
@@ -62,7 +62,7 @@
         "input": "決まった時間のまとめ仕事",
         "process": "作る → 受信棚へ置く",
         "output": "今朝の4つの紙",
-        "current": "今日のnews・quote・boardはある。diaryはない",
+        "current": "今日のnews・quote・board・diaryはいずれもない",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -71,8 +71,8 @@
     {
       "id": "gas-check",
       "name": "朝の便の検収（工事途中）",
-      "status": "near_complete",
-      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
+      "status": "error",
+      "progress": { "kind": "count", "done": 0, "total": 4, "percent": 0 },
       "detail": {
         "owner": "GAS",
         "phase": "工事途中",
@@ -80,7 +80,7 @@
         "input": "受信棚の今朝の紙",
         "process": "名前と大きさだけ見て、合格か書く",
         "output": "合格／足りないの印",
-        "current": "今日のnews・quote・boardはある。diaryはない",
+        "current": "今日のnews・quote・board・diaryはいずれもない",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -98,7 +98,7 @@
         "input": "受信棚の今朝の紙と心拍",
         "process": "読む → 一枚に追記する。判断しない",
         "output": "けさの1枚の今日の段",
-        "current": "8/24 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料のnews・quote・boardは今日分あり diaryなし",
+        "current": "8/25 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料のnews・quote・board・diaryは今日分なし",
         "evidence": "けさの1枚の更新時刻と、受信棚の今日の紙の有無",
         "cause": "書く役を移したあと、今日分がまだ一枚に載っていない。",
         "impact": "朝見る一枚が、古い日付のまま止まっている。"
@@ -197,7 +197,7 @@
     {
       "id": "mac-heartbeat",
       "name": "Mac心拍",
-      "status": "running",
+      "status": "error",
       "progress": { "kind": "watching" },
       "detail": {
         "owner": "スクリプト",
@@ -206,7 +206,7 @@
         "input": "機械の生存の印",
         "process": "印を書いて受信棚へ置く",
         "output": "今日の心拍の紙",
-        "current": "今日のmac_heartbeatあり。STATE生成は22:00",
+        "current": "今日のmac_heartbeatなし。STATE生成は05:58",
         "evidence": "受信棚の今日の紙とSTATE.mdの生成時刻"
       }
     },
@@ -222,7 +222,7 @@
         "input": "手元の定期の仕事",
         "process": "回す → いまの現在地を書き直す",
         "output": "新しい現在地",
-        "current": "STATEは22:00生成。見回り最終22:00。見張り21:48。走行中はマスクの在庫（古い順に1本）",
+        "current": "STATEは05:58生成。見回り最終05:58。見張り05:56。走行中はなし",
         "evidence": "いまの現在地の稼働の行"
       }
     },
@@ -318,7 +318,7 @@
         "input": "各仕事の短い様子",
         "process": "朝の便がまとめて置く",
         "output": "動いている数と、止まっている名",
-        "current": "今日の board 便は届いている。けさの1枚にはまだ今日分が載っていない",
+        "current": "今日の board 便は届いていない。けさの1枚にはまだ今日分が載っていない",
         "evidence": "けさの1枚の 8/15 の board の行と受信棚"
       }
     },
@@ -334,7 +334,7 @@
         "input": "日記から仕事にしたもの",
         "process": "1行を 今／保留／確認待ち／完了 に置く。確認待ちに貯めて振り返る",
         "output": "スマホで見えるいまの列",
-        "current": "表はある。今日の board 便は届いている",
+        "current": "表はある。今日の board 便は届いていない",
         "evidence": "Notion の Claude作業ボード"
       }
     },
@@ -366,7 +366,7 @@
         "input": "朝の便、心拍、発注、処理の紙",
         "process": "置く。消さない。上書きしない",
         "output": "次の人が読める棚",
-        "current": "今日のnews・quote・board・mac_heartbeatあり。diaryなし。未処理の手紙は0。隔離は14",
+        "current": "今日のnews・quote・board・diary・mac_heartbeatなし。未処理の手紙は0。隔離は7",
         "evidence": "いまの現在地と、司令塔の仕事表"
       }
     },
