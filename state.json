@@ -2,9 +2,9 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-30T14:02:00+09:00",
+  "updated_at": "2026-08-30T15:11:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-30T13:12:00+09:00",
+  "compared_to": "2026-08-30T14:02:00+09:00",
   "deltas": [
     {
       "name": "朝の便",
