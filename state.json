@@ -2,15 +2,15 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-30T12:09:00+09:00",
+  "updated_at": "2026-08-30T13:12:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-30T11:02:00+09:00",
+  "compared_to": "2026-08-30T12:09:00+09:00",
   "deltas": [
     {
       "name": "朝の便",
       "before": "3 / 4（news・quote・boardあり、diaryなし）",
-      "after": "3 / 4（news・quote・boardあり、diaryなし）",
-      "note": "変化なし"
+      "after": "4 / 4（news・quote・board・diaryあり）",
+      "note": "diary到着"
     },
     {
       "name": "けさの1枚",
@@ -20,15 +20,15 @@
     },
     {
       "name": "Mac心拍",
-      "before": "STATE.md生成は11:02。今日の心拍ファイルあり",
+      "before": "STATE.md生成は11:14。今日の心拍ファイルあり",
       "after": "STATE.md生成は11:14。今日の心拍ファイルあり",
-      "note": "STATE生成時刻の更新"
+      "note": "変化なし"
     },
     {
       "name": "見回り・見張り",
-      "before": "STATEは11:02生成。見回り最終11:01。見張り10:47。走行中?",
+      "before": "STATEは11:14生成。見回り最終11:14。見張り11:02。走行中?",
       "after": "STATEは11:14生成。見回り最終11:14。見張り11:02。走行中?",
-      "note": "STATEの稼働の行"
+      "note": "変化なし"
     },
     {
       "name": "整文の在庫",
@@ -40,7 +40,7 @@
       "name": "提出と穴探し",
       "before": "本人待ち1件。Fable待ち2件。いちばん長い待ちは26日",
       "after": "本人待ち1件。Fable待ち2件。いちばん長い待ちは26日",
-      "note": "STATEの詰まり行"
+      "note": "変化なし"
     },
     {
       "name": "S3成果",
@@ -51,16 +51,16 @@
     {
       "name": "受信棚",
       "before": "今日のnews・quote・board・mac_heartbeatあり、diaryなし",
-      "after": "今日のnews・quote・board・mac_heartbeatあり、diaryなし",
-      "note": "変化なし"
+      "after": "今日のnews・quote・board・diary・mac_heartbeatあり",
+      "note": "diary到着"
     }
   ],
   "systems": [
     {
       "id": "morning-pack",
       "name": "朝の便",
-      "status": "error",
-      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
+      "status": "near_complete",
+      "progress": { "kind": "count", "done": 4, "total": 4, "percent": 100 },
       "detail": {
         "owner": "スクリプト",
         "phase": "工事途中",
@@ -68,7 +68,7 @@
         "input": "決まった時間のまとめ仕事",
         "process": "作る → 受信棚へ置く",
         "output": "今朝の4つの紙",
-        "current": "今日のnews・quote・boardあり、diaryなし",
+        "current": "今日のnews・quote・board・diaryあり",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -77,8 +77,8 @@
     {
       "id": "gas-check",
       "name": "朝の便の検収（工事途中）",
-      "status": "error",
-      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
+      "status": "near_complete",
+      "progress": { "kind": "count", "done": 4, "total": 4, "percent": 100 },
       "detail": {
         "owner": "GAS",
         "phase": "工事途中",
@@ -86,7 +86,7 @@
         "input": "受信棚の今朝の紙",
         "process": "名前と大きさだけ見て、合格か書く",
         "output": "合格／足りないの印",
-        "current": "今日のnews・quote・boardあり、diaryなし",
+        "current": "今日のnews・quote・board・diaryあり",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -104,7 +104,7 @@
         "input": "受信棚の今朝の紙と心拍",
         "process": "読む → 一枚に追記する。判断しない",
         "output": "けさの1枚の今日の段",
-        "current": "8/30 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料は受信棚に一部あり",
+        "current": "8/30 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料は受信棚に全部あり",
         "evidence": "けさの1枚の更新時刻と、受信棚の今日の紙の有無",
         "cause": "書く役を移したあと、今日分がまだ一枚に載っていない。",
         "impact": "朝見る一枚が、古い日付のまま止まっている。"
@@ -372,7 +372,7 @@
         "input": "朝の便、心拍、発注、処理の紙",
         "process": "置く。消さない。上書きしない",
         "output": "次の人が読める棚",
-        "current": "今日のnews・quote・board・mac_heartbeatあり、diaryなし。未処理の手紙は0。隔離は7",
+        "current": "今日のnews・quote・board・diary・mac_heartbeatあり。未処理の手紙は0。隔離は7",
         "evidence": "いまの現在地と、司令塔の仕事表"
       }
     },
