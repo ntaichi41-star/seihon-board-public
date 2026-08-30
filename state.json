@@ -2,15 +2,15 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-08-30T13:12:00+09:00",
+  "updated_at": "2026-08-30T14:02:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-08-30T12:09:00+09:00",
+  "compared_to": "2026-08-30T13:12:00+09:00",
   "deltas": [
     {
       "name": "朝の便",
-      "before": "3 / 4（news・quote・boardあり、diaryなし）",
+      "before": "4 / 4（news・quote・board・diaryあり）",
       "after": "4 / 4（news・quote・board・diaryあり）",
-      "note": "diary到着"
+      "note": "変化なし"
     },
     {
       "name": "けさの1枚",
@@ -50,9 +50,9 @@
     },
     {
       "name": "受信棚",
-      "before": "今日のnews・quote・board・mac_heartbeatあり、diaryなし",
+      "before": "今日のnews・quote・board・diary・mac_heartbeatあり",
       "after": "今日のnews・quote・board・diary・mac_heartbeatあり",
-      "note": "diary到着"
+      "note": "変化なし"
     }
   ],
   "systems": [
