@@ -2,45 +2,39 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-09-02T07:03:00+09:00",
+  "updated_at": "2026-09-02T08:11:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-09-02T06:14:00+09:00",
+  "compared_to": "2026-09-02T07:03:00+09:00",
   "deltas": [
     {
-      "name": "朝の便",
-      "before": "1 / 4（quoteのみあり）",
-      "after": "3 / 4（news・quote・boardあり）",
-      "note": "news・board着。diaryなし"
-    },
-    {
-      "name": "受信棚",
-      "before": "今日のquoteあり。news・board・diary・mac_heartbeatなし",
-      "after": "今日のnews・quote・boardあり。diary・mac_heartbeatなし",
-      "note": "朝の便3本"
-    },
-    {
       "name": "見回り・見張り",
-      "before": "STATEは06:13生成。見回り最終06:13。見張り06:03。走行中?",
-      "after": "STATEは06:59生成。見回り最終06:59。見張り06:48。走行中?",
+      "before": "STATEは06:59生成。見回り最終06:59。見張り06:48。走行中?",
+      "after": "STATEは08:11生成。見回り最終08:11。見張り08:04。走行中?",
       "note": "見回り・見張りが更新"
     },
     {
       "name": "Mac心拍",
-      "before": "STATE.md生成は06:13。今日の心拍ファイルなし",
-      "after": "STATE.md生成は06:59。今日の心拍ファイルなし",
+      "before": "STATE.md生成は06:59。今日の心拍ファイルなし",
+      "after": "STATE.md生成は08:11。今日の心拍ファイルなし",
       "note": "STATE更新。心拍ファイル未着"
+    },
+    {
+      "name": "朝の便",
+      "before": "3 / 4（news・quote・boardあり）",
+      "after": "3 / 4（news・quote・boardあり）",
+      "note": "変化なし"
+    },
+    {
+      "name": "受信棚",
+      "before": "今日のnews・quote・boardあり。diary・mac_heartbeatなし",
+      "after": "今日のnews・quote・boardあり。diary・mac_heartbeatなし",
+      "note": "変化なし"
     },
     {
       "name": "けさの1枚",
       "before": "9/2 の見出しが無い。最後の更新は 8/15 前後",
       "after": "9/2 の見出しが無い。最後の更新は 8/15 前後",
       "note": "変化なし"
-    },
-    {
-      "name": "家の仕事一覧",
-      "before": "今日の board 便は届いていない",
-      "after": "今日の board 便あり",
-      "note": "board着"
     }
   ],
   "systems": [
@@ -200,7 +194,7 @@
         "input": "機械の生存の印",
         "process": "印を書いて受信棚へ置く",
         "output": "今日の心拍の紙",
-        "current": "今日のmac_heartbeatなし。STATE生成は06:59",
+        "current": "今日のmac_heartbeatなし。STATE生成は08:11",
         "evidence": "受信棚の今日の紙とSTATE.mdの生成時刻"
       }
     },
@@ -216,7 +210,7 @@
         "input": "手元の定期の仕事",
         "process": "回す → いまの現在地を書き直す",
         "output": "新しい現在地",
-        "current": "STATEは06:59生成。見回り最終06:59。見張り06:48。走行中?",
+        "current": "STATEは08:11生成。見回り最終08:11。見張り08:04。走行中?",
         "evidence": "いまの現在地の稼働の行"
       }
     },
