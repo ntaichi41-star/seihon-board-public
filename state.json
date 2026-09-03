@@ -2,33 +2,33 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-09-03T13:05:00+09:00",
+  "updated_at": "2026-09-03T14:10:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-09-03T12:05:00+09:00",
+  "compared_to": "2026-09-03T13:05:00+09:00",
   "deltas": [
     {
       "name": "見回り・見張り",
-      "before": "STATEは12:05生成。見回り最終12:04。見張り11:57。走行中",
-      "after": "STATEは13:01生成。見回り最終13:01。見張り12:58。走行中",
+      "before": "STATEは13:01生成。見回り最終13:01。見張り12:58。走行中",
+      "after": "STATEは14:08生成。見回り最終14:08。見張り13:58。走行中",
       "note": "見回り・見張りが更新"
     },
     {
       "name": "Mac心拍",
-      "before": "STATE.md生成は12:05。今日の心拍ファイルなし",
-      "after": "STATE.md生成は13:01。今日の心拍ファイルなし",
+      "before": "STATE.md生成は13:01。今日の心拍ファイルなし",
+      "after": "STATE.md生成は14:08。今日の心拍ファイルなし",
       "note": "STATE更新。心拍ファイル未着"
     },
     {
       "name": "朝の便",
       "before": "2 / 4（quote・boardあり。news・diaryなし）",
-      "after": "2 / 4（quote・boardあり。news・diaryなし）",
-      "note": "変化なし"
+      "after": "3 / 4（quote・board・diaryあり。newsなし）",
+      "note": "diary到着"
     },
     {
       "name": "受信棚",
       "before": "今日のquote・boardあり。news・diary・mac_heartbeatなし",
-      "after": "今日のquote・boardあり。news・diary・mac_heartbeatなし",
-      "note": "変化なし"
+      "after": "今日のquote・board・diaryあり。news・mac_heartbeatなし",
+      "note": "diary到着"
     },
     {
       "name": "けさの1枚",
@@ -41,8 +41,8 @@
     {
       "id": "morning-pack",
       "name": "朝の便",
-      "status": "error",
-      "progress": { "kind": "count", "done": 2, "total": 4, "percent": 50 },
+      "status": "near_complete",
+      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
       "detail": {
         "owner": "スクリプト",
         "phase": "工事途中",
@@ -50,7 +50,7 @@
         "input": "決まった時間のまとめ仕事",
         "process": "作る → 受信棚へ置く",
         "output": "今朝の4つの紙",
-        "current": "今日のquote・boardあり。news・diaryなし",
+        "current": "今日のquote・board・diaryあり。newsなし",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -59,8 +59,8 @@
     {
       "id": "gas-check",
       "name": "朝の便の検収（工事途中）",
-      "status": "error",
-      "progress": { "kind": "count", "done": 2, "total": 4, "percent": 50 },
+      "status": "near_complete",
+      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
       "detail": {
         "owner": "GAS",
         "phase": "工事途中",
@@ -68,7 +68,7 @@
         "input": "受信棚の今朝の紙",
         "process": "名前と大きさだけ見て、合格か書く",
         "output": "合格／足りないの印",
-        "current": "今日のquote・boardあり。news・diaryなし",
+        "current": "今日のquote・board・diaryあり。newsなし",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -86,7 +86,7 @@
         "input": "受信棚の今朝の紙と心拍",
         "process": "読む → 一枚に追記する。判断しない",
         "output": "けさの1枚の今日の段",
-        "current": "9/3 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料は受信棚にquote・boardあり",
+        "current": "9/3 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料は受信棚にquote・board・diaryあり",
         "evidence": "けさの1枚の更新時刻と、受信棚の今日の紙の有無",
         "cause": "書く役を移したあと、今日分がまだ一枚に載っていない。",
         "impact": "朝見る一枚が、古い日付のまま止まっている。"
@@ -194,7 +194,7 @@
         "input": "機械の生存の印",
         "process": "印を書いて受信棚へ置く",
         "output": "今日の心拍の紙",
-        "current": "今日のmac_heartbeatなし。STATE生成は13:01",
+        "current": "今日のmac_heartbeatなし。STATE生成は14:08",
         "evidence": "受信棚の今日の紙とSTATE.mdの生成時刻"
       }
     },
@@ -210,7 +210,7 @@
         "input": "手元の定期の仕事",
         "process": "回す → いまの現在地を書き直す",
         "output": "新しい現在地",
-        "current": "STATEは13:01生成。見回り最終13:01。見張り12:58。走行中",
+        "current": "STATEは14:08生成。見回り最終14:08。見張り13:58。走行中",
         "evidence": "いまの現在地の稼働の行"
       }
     },
@@ -354,7 +354,7 @@
         "input": "朝の便、心拍、発注、処理の紙",
         "process": "置く。消さない。上書きしない",
         "output": "次の人が読める棚",
-        "current": "今日のquote・boardあり。news・diary・mac_heartbeatなし",
+        "current": "今日のquote・board・diaryあり。news・mac_heartbeatなし",
         "evidence": "いまの現在地と、司令塔の仕事表"
       }
     },
