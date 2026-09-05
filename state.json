@@ -2,21 +2,21 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-09-05T12:09:00+09:00",
+  "updated_at": "2026-09-05T13:04:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-09-05T11:03:00+09:00",
+  "compared_to": "2026-09-05T12:09:00+09:00",
   "deltas": [
     {
       "name": "朝の便",
       "before": "3 / 4（news・quote・boardあり。diaryなし）",
-      "after": "3 / 4（news・quote・boardあり。diaryなし）",
-      "note": "変化なし"
+      "after": "4 / 4（news・quote・board・diaryあり）",
+      "note": "diary到着"
     },
     {
       "name": "受信棚",
       "before": "今日のnews・quote・board・mac_heartbeatあり。diaryなし",
-      "after": "今日のnews・quote・board・mac_heartbeatあり。diaryなし",
-      "note": "変化なし"
+      "after": "今日のnews・quote・board・diary・mac_heartbeatあり",
+      "note": "diary到着"
     },
     {
       "name": "けさの1枚",
@@ -28,7 +28,7 @@
       "name": "見回り・見張り",
       "before": "STATEは10:25生成。見回り最終10:25。見張り10:17。走行中",
       "after": "STATEは10:25生成。見回り最終10:25。見張り10:17。走行中",
-      "note": "変化なし（STATE生成から約1時間40分）"
+      "note": "変化なし（STATE生成から約2時間40分）"
     },
     {
       "name": "Mac心拍",
@@ -42,7 +42,7 @@
       "id": "morning-pack",
       "name": "朝の便",
       "status": "near_complete",
-      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
+      "progress": { "kind": "count", "done": 4, "total": 4, "percent": 100 },
       "detail": {
         "owner": "スクリプト",
         "phase": "工事途中",
@@ -50,7 +50,7 @@
         "input": "決まった時間のまとめ仕事",
         "process": "作る → 受信棚へ置く",
         "output": "今朝の4つの紙",
-        "current": "今日のnews・quote・boardあり。diaryなし",
+        "current": "今日のnews・quote・board・diaryあり",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -60,7 +60,7 @@
       "id": "gas-check",
       "name": "朝の便の検収（工事途中）",
       "status": "near_complete",
-      "progress": { "kind": "count", "done": 3, "total": 4, "percent": 75 },
+      "progress": { "kind": "count", "done": 4, "total": 4, "percent": 100 },
       "detail": {
         "owner": "GAS",
         "phase": "工事途中",
@@ -68,7 +68,7 @@
         "input": "受信棚の今朝の紙",
         "process": "名前と大きさだけ見て、合格か書く",
         "output": "合格／足りないの印",
-        "current": "今日のnews・quote・boardあり。diaryなし",
+        "current": "今日のnews・quote・board・diaryあり",
         "evidence": "受信棚の今日の紙の有無",
         "cause": "",
         "impact": ""
@@ -86,7 +86,7 @@
         "input": "受信棚の今朝の紙と心拍",
         "process": "読む → 一枚に追記する。判断しない",
         "output": "けさの1枚の今日の段",
-        "current": "9/5 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料は受信棚に今日のnews・quote・board・mac_heartbeatあり",
+        "current": "9/5 の見出しが無い。最後に触ったのは 8/15 前後。書く役は Gemini Spark。材料は受信棚に今日のnews・quote・board・diary・mac_heartbeatあり",
         "evidence": "けさの1枚の更新時刻と、受信棚の今日の紙の有無",
         "cause": "書く役を移したあと、今日分がまだ一枚に載っていない。",
         "impact": "朝見る一枚が、古い日付のまま止まっている。"
@@ -354,7 +354,7 @@
         "input": "朝の便、心拍、発注、処理の紙",
         "process": "置く。消さない。上書きしない",
         "output": "次の人が読める棚",
-        "current": "今日のnews・quote・board・mac_heartbeatあり。diaryなし",
+        "current": "今日のnews・quote・board・diary・mac_heartbeatあり",
         "evidence": "いまの現在地と、司令塔の仕事表"
       }
     },
