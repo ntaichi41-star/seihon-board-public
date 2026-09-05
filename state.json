@@ -2,21 +2,21 @@
   "schema_version": 1,
   "title": "正本システム運転図",
   "subtitle": "見るだけ（書き込みなし）",
-  "updated_at": "2026-09-05T13:04:00+09:00",
+  "updated_at": "2026-09-05T14:14:00+09:00",
   "poll_hint_seconds": 180,
-  "compared_to": "2026-09-05T12:09:00+09:00",
+  "compared_to": "2026-09-05T13:04:00+09:00",
   "deltas": [
     {
-      "name": "朝の便",
-      "before": "3 / 4（news・quote・boardあり。diaryなし）",
-      "after": "4 / 4（news・quote・board・diaryあり）",
-      "note": "diary到着"
+      "name": "見回り・見張り",
+      "before": "STATEは10:25生成。見回り最終10:25。見張り10:17。走行中",
+      "after": "STATEは10:25生成。見回り最終10:25。見張り10:17。生成から約3時間49分",
+      "note": "STATE生成が20分超で古い"
     },
     {
-      "name": "受信棚",
-      "before": "今日のnews・quote・board・mac_heartbeatあり。diaryなし",
-      "after": "今日のnews・quote・board・diary・mac_heartbeatあり",
-      "note": "diary到着"
+      "name": "Mac心拍",
+      "before": "STATE.md生成は10:25。今日のmac_heartbeatあり",
+      "after": "STATE.md生成は10:25。今日のmac_heartbeatあり（ファイル内容は06:45）",
+      "note": "変化なし（ファイル鮮度は朝）"
     },
     {
       "name": "けさの1枚",
@@ -25,15 +25,15 @@
       "note": "見出し未着継続"
     },
     {
-      "name": "見回り・見張り",
-      "before": "STATEは10:25生成。見回り最終10:25。見張り10:17。走行中",
-      "after": "STATEは10:25生成。見回り最終10:25。見張り10:17。走行中",
-      "note": "変化なし（STATE生成から約2時間40分）"
+      "name": "朝の便",
+      "before": "4 / 4（news・quote・board・diaryあり）",
+      "after": "4 / 4（news・quote・board・diaryあり）",
+      "note": "変化なし"
     },
     {
-      "name": "Mac心拍",
-      "before": "STATE.md生成は10:25。今日のmac_heartbeatあり",
-      "after": "STATE.md生成は10:25。今日のmac_heartbeatあり",
+      "name": "受信棚",
+      "before": "今日のnews・quote・board・diary・mac_heartbeatあり",
+      "after": "今日のnews・quote・board・diary・mac_heartbeatあり",
       "note": "変化なし"
     }
   ],
@@ -210,7 +210,7 @@
         "input": "手元の定期の仕事",
         "process": "回す → いまの現在地を書き直す",
         "output": "新しい現在地",
-        "current": "STATEは10:25生成。見回り最終10:25。見張り10:17。走行中",
+        "current": "STATEは10:25生成。見回り最終10:25。見張り10:17。生成から約3時間49分",
         "evidence": "いまの現在地の稼働の行"
       }
     },
